@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NICO_#3.6</title>
+    <style>
+      body {
+        height: 500vh;
+        margin: 50px;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+      }
+      div:first-child {
+        background-color: crimson;
+      }
+      div:last-of-type {
+        background-color: teal;
+      }
+      span {
+        background-color: darkolivegreen;
+      }
+      span:nth-child(7),
+      span:nth-of-type(4) {
+        background-color: darkgrey;
+      }
+      span:nth-of-type(n + 5) {
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      first-child <br />
+      class나 id 보다 훨 나은 방법임
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>last-child</div>
+    <span>first</span>
+    <span>second</span>
+    <span>third</span>
+    <span>fourth</span>
+    <span>fifth</span>
+    <span>sixth</span>
+    <span>seventh</span>
+  </body>
+</html>

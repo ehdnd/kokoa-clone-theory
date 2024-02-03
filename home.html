@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="short cut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.svg"
+    />
+    <title>Home - My first Wbsite.</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my web site!" />
+  </head>
+  <body>
+    <h1>Let's go to 'Google'</h1>
+    <a href="https://www.google.com" target="_blank">Go to 'Google'</a>
+    <img src="image/google_home.svg" />
+    <form>
+      <div>
+        <label for="profile">Profile Photo</label>
+        <input id="profile" type="file" accept=".png" />
+      </div>
+      <div>
+        <label for="first name">First Name</label>
+        <input id="first name" placeholder="성" type="text" />
+      </div>
+      <div>
+        <input required placeholder="이름" type="text" />
+        <input required placeholder="닉네임" type="text" />
+        <input required placeholder="비밀번호" minlength="10" type="password" />
+        <input type="submit" value="계정 만들기" />
+      </div>
+      <div>
+        <label for="website">Website</label>
+        <input id="website" required placeholder="Url" type="url" />
+      </div>
+    </form>
+  </body>
+</html>

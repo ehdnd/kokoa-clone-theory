@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NICO_#3.10</title>
+    <style>
+      body {
+        height: 500vh;
+        margin: 50px;
+      }
+      button:active {
+        background-color: cadetblue;
+      }
+      div:hover input:focus {
+        background-color: tomato;
+      }
+      a:visited {
+        color: darkgreen;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: tomato;
+      }
+      form {
+        border: 2px solid sandybrown;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border-color: darkmagenta;
+      }
+      form:hover input {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>button</button>
+      <input type="text" placeholder="focus = 키보드로 선택" />
+      <input type="text" placeholder="div자식인 input"/>
+      <div>
+        <a href="https://apple.com" target="_blank">Go to Apple.com</a>
+      </div>
+    </div>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+      <p>focus-within 은 focused인 자식을 가진 부모 엘리먼트에게 적용됨</p>
+      <p>form이 hover 상태면 input의 배경색이 변화</p>
+    </form>
+  </body>
+</html>

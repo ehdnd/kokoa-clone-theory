@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NICO_#4.5</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: rgb(116, 116, 250);
+        width: 200px;
+        height: 200px;
+      }
+
+      @media screen and (max-width: 800px) {
+        div {
+          background-color: rgba(231, 124, 124, 0.808);
+        }
+      }
+
+      @media screen and (min-width: 800px) and (max-width: 1200px) and (orientation: landscape) {
+        div {
+          background-color: rgb(240, 240, 157);
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1800px) {
+        div {
+          background-color: rgb(161, 247, 161);
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: rgb(143, 68, 68);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span>Please flip your phone...</span>
+    <p>media query는 조건을 추가할 수 있는 방법임</p>
+  </body>
+</html>

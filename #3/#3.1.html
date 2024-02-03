@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>NICO_#3.1</title>
+    <style>
+      * {
+        border: 1px solid black;
+      }
+      div {
+        height: 100px;
+        width: 1000px;
+        background-color: white;
+        padding: 10px;
+      }
+      .inline-block {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+      }
+      #first {
+        background-color: red;
+        height: 130px;
+        width: 900px;
+      }
+      #second {
+        background-color: orange;
+        height: 110px;
+        width: 800px;
+      }
+      #third {
+        background-color: yellow;
+        height: 90px;
+        width: 700px;
+      }
+      span {
+        background-color: aquamarine;
+        border-style: dotted;
+      }
+      #span_1 {
+        display: block;
+        padding: 20px;
+        margin: 10px;
+      }
+      .span {
+        padding: 10px;
+        margin: 10px;
+      }
+      .btn {
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .span_ex1 {
+        background-color: cornflowerblue;
+        color: white;
+        margin: 20px;
+      }
+      .span_ex2 {
+        background-color: coral;
+        margin: 5px;
+      }
+      p {
+        background-color: rgb(124, 112, 134);
+      }
+      html {
+        background-color: rgb(107, 124, 138);
+      }
+      body {
+        background-color: bisque;
+        margin: 30px 10px;
+        padding: 20px;
+      }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div></div>
+    <div>
+      inline은 height와 width를 가질수 없음 <br />block은 가질 수 있음
+      <br />margin, padding, border라는 세가지 특징을 가짐.
+    </div>
+    <p>akljfd</p>
+    <p>inline....... span, link, img</p>
+    <p>block........ else.....</p>
+    <span id="span_1">Hello</span>
+    <div>
+      margin은 box의 border(경계)의 바깥에 있는 공간이다. <br />
+      margin 상하,좌우 // 시, 계, 방, 향 - 북동남서 <br />
+      collapsing margin 현상.. body와 div의 (box) 경계가 같을때 상하에서.
+    </div>
+    <div>padding은 box의 border(경계)의 안쪽에 있는 공간이다.</div>
+    <div>
+      *는 모두를 뜻함 <br />
+      border: 너비, 스타일, 색
+    </div>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span class="span">inline에도 border가 적용됨. padding 적용됨.</span>
+          <span class="span">margin은 좌우만 적용됨. block으로 바꿔야.</span>
+        </div>
+      </div>
+    </div>
+    <span class="btn span_ex2">span_ex1</span>
+    <span class="btn span_ex1">span_ex2</span>
+    <span class="btn span_ex1">span_ex1</span>
+    <span class="btn span_ex2">span_ex2</span>
+    <span class="btn span_ex1">span_ex1</span>
+    <span class="btn span_ex2">span_ex2</span>
+    <div class="inline-block"></div>
+    <div class="inline-block"></div>
+    <div class="inline-block"></div>
+  </body>
+</html>

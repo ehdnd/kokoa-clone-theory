@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NICO_#3.9</title>
+    <style>
+      body {
+        height: 500vh;
+        margin: 50px;
+      }
+      input {
+        border: 2px solid yellowgreen;
+      }
+      input:required {
+        border-color: teal;
+      }
+      input[type="password"] {
+        background-color: blanchedalmond;
+      }
+      input[placeholder~="name"] {
+        background-color: rgb(70, 73, 72);
+      }
+      input::placeholder {
+        color: rgb(221, 205, 205);
+      }
+      p::selection {
+        background-color: darkkhaki;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="username" />
+        <input type="text" placeholder="first name" />
+        <input type="text" placeholder="last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+    <p>실제로 존재 element 아니지만 스타일링이 가능하게 만들어주는.</p>
+    <form>
+      <div>
+        <label for="1">placeholder를 스타일링해줌</label>
+        <input type="text" placeholder="name" id="1" />
+      </div>
+      <p>
+        선택할때 색상변경. As the gentle breeze rustled through the trees, I
+        found myself lost in the tranquil beauty of the forest. Rays of sunlight
+        filtered through the canopy above, casting dappled patterns on the
+        forest floor. In that moment, surrounded by nature's symphony, I felt a
+        deep sense of peace wash over me.
+      </p>
+    </form>
+  </body>
+</html>

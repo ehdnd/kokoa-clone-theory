@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NICO_#3.8</title>
+    <style>
+      body {
+        height: 500vh;
+        margin: 50px;
+      }
+      span {
+        color: tomato;
+        background-color: bisque;
+      }
+      p span {
+        color: teal;
+      }
+      p ~ span {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Material wealth does not guarantee happiness. True happiness stems from
+        inner peace. <span>p(부모)안에 있는 span(자식)을 찾아라</span>
+      </p>
+      <address>address</address>
+      <span
+        >p + span 은 p 바로뒤 아니면 안됨 // p ~ span 은 p 형제인데 바로 뒤
+        아닐때</span
+      >
+    </div>
+  </body>
+</html>
