@@ -19,13 +19,6 @@ b {
   margin: 5px;
 }
 
-.colors__container > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
 .colors {
   display: flex;
   justify-content: center;
@@ -37,7 +30,7 @@ b {
   margin-bottom: 100px;
 }
 
-.colors__container {
+.colors-container {
   background-color: white;
   height: 300px;
   width: 200px;
@@ -47,13 +40,17 @@ b {
   align-items: center;
 }
 
-.colors__container > div {
+.colors-container__colorbackground {
   height: 290px;
   width: 190px;
   position: relative;
 }
 
-.colors__container > div > div {
+.colors-container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   height: 100px;
   width: 190px;
   background-color: white;
@@ -61,18 +58,18 @@ b {
   top: 30px;
 }
 
-.colors__container:first-child > div {
+.colors-container:first-child .colors-container__colorbackground {
   background-color: tomato;
 }
 
-.colors__container:nth-child(2) > div {
+.colors-container:nth-child(2) .colors-container__colorbackground {
   background-color: teal;
 }
 
-.colors__container:nth-child(3) > div {
+.colors-container:nth-child(3) .colors-container__colorbackground {
   background-color: burlywood;
 }
 
-.colors__container:nth-child(4) > div {
+.colors-container:last-child .colors-container__colorbackground {
   background-color: thistle;
 }
