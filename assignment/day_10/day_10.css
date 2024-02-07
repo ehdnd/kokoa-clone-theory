@@ -11,7 +11,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5px 3px;
+  align-items: center;
+  padding: 0 3vh;
   box-sizing: border-box;
 }
 
@@ -35,8 +36,8 @@ body {
 
 .selected-album-infomation {
   width: 100%;
-  height: 25vh;
-  margin: 5vh 0vh;
+  height: 20vh;
+  margin: 8vh 0vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,22 +77,80 @@ h3 {
 
 .function {
   width: 100%;
-  height: 10vh;
+  height: 8.5vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .function__play-btn {
-  width: 50%;
-  height: 100%;
+  width: 25vh;
+  height: 8.5vh;
   border: 2px black solid;
   border-radius: 3vh;
+  border-bottom: 0.7vh black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.function__like-btn {
-  width: 25%;
-  height: ;
+.function__like-btn,
+.function__add-btn {
+  width: 8.5vh;
+  height: 8.5vh;
   border: 2px black solid;
   border-radius: 50%;
+  border-bottom: 0.7vh black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.playlist-music__music {
+  width: 100%;
+  height: 8.5vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-music__img {
+  width: 8.5vh;
+  height: 8.5vh;
+  border: 2px black solid;
+  border-radius: 2vh;
+}
+
+.playlist-music__music:first-of-type .playlist-music__img {
+  background-color: #f85a2a;
+}
+
+.playlist-music__music:nth-of-type(2) .playlist-music__img {
+  background-color: #ff89bb;
+}
+
+.playlist-music__music:nth-of-type(3) .playlist-music__img {
+  background-color: #1847e5;
+}
+
+.playlist-music__music:nth-of-type(4) .playlist-music__img {
+  background-color: #00c6ad;
+}
+
+.playlist-music__title {
+  width: 78%;
+  height: 8.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 3.5vh;
 }
