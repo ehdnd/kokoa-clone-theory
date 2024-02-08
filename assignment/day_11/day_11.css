@@ -68,6 +68,7 @@ header {
 main {
   width: 100%;
   height: 84vh;
+  overflow-x: hidden;
 }
 
 .main-book {
@@ -138,6 +139,9 @@ main {
   height: 5vh;
   background-color: #ffce33;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-book__buy {
@@ -153,22 +157,67 @@ main {
 }
 
 .top-adventures {
-  overflow-x: hidden;
-  margin: 5vh 3vh;
+  margin: 5vh 5vh 0 3vh;
 }
 
 .top-adventures__column {
-  width: 80vh;
   margin-top: 5vh;
+  width: 70vh;
   display: flex;
+  justify-content: space-between;
+}
 
-  background-color: whitesmoke;
+.top-adventures__book-stars {
+  margin-top: 2vh;
+  color: #ffce33;
+  font-size: 2vh;
+}
+
+.top-adventures__book-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-adventures__book {
   height: 20vh;
-  width: 13vh;
-  margin-right: 4vh;
+  width: 11vh;
+  border-radius: 2vh;
 
-  background-color: coral;
+  background-color: darkslategray;
+}
+
+.popular-authors {
+  margin: 5vh 3vh;
+}
+
+.popular-authors__column {
+  width: 100%;
+  height: 25vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-authors__img {
+  height: 25vh;
+  width: 35%;
+  background-color: darkcyan;
+  border-radius: 2vh;
+  margin-right: 4vh;
+}
+
+.popular-authors__text {
+  height: 100%;
+  width: calc(75% - 8vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.popular-authors__info {
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.2);
+  line-height: 3vh;
 }
