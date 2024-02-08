@@ -153,4 +153,22 @@ main {
 }
 
 .top-adventures {
+  overflow-x: hidden;
+  margin: 5vh 3vh;
+}
+
+.top-adventures__column {
+  width: 80vh;
+  margin-top: 5vh;
+  display: flex;
+
+  background-color: whitesmoke;
+}
+
+.top-adventures__book {
+  height: 20vh;
+  width: 13vh;
+  margin-right: 4vh;
+
+  background-color: coral;
 }
